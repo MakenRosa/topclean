@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: gray;
+}
+header{
+    text-align: center;
+    background-image: url(imagens/wallpaper002.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+header > h1{
+    padding: 40px 0px 30px 0px;
+    color: white;
+    font-size: 50px;
+}
+header > p{
+    margin: 0px 80px 40px 80px;
+    color: white;
+}
+header > div{
+    padding: 0px;
+    background-color: gray;
+    word-spacing: 50px;
+    text-align: center;
+    height: 4em;
+    border: 1px solid black;
+    border-left: 0px;
+    border-right: 0px;
+}
+header > div > p{
+    line-height: 65px;
+}
+header > div > p >a{
+    word-spacing: 2px;
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+}
+main{
+    padding: 10px 10px 10px 20px;
+    background-image: url(imagens/wallpaper006.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px auto 0px auto;
+    max-width: 1000px;
+    min-height: 300px;
+    display: block;
+}
+main > h1{
+    padding: 20px 0px 10px 20px;
+}
+#cabeçalhosec{
+    padding: 40px 0px 70px 0px;
+    text-align: center;
+    background-image: url(imagens/wallpaper002.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 600px;
+    margin: auto;
+    margin-bottom: 40px;
+    color: white;
+    box-shadow: inset black 0px 0px 8px 1px;
+}
+#cabeçalhosec > h2{
+    padding-bottom: 35px;
+}
+#cabeçalhosec > article > p{
+    width: 400px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.349);
+    padding: 6px;
+    border-radius: 2px;
+}
+.botao{
+    margin-top: 40px;
+    color: white;
+    background-color: rgb(46, 45, 45);
+    border-radius: 6px;
+    font-size: 18px;
+}
+main > div{
+    min-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content{
+    margin-left: 3%;
+}
+#c1{
+    display: inline-block;
+    margin: 20px 1vw 60px 1vw;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 260px;
+    padding: 10px;
+    color: white;
+    height: 420px;
+    line-height: 40px;
+    box-shadow: black inset 0px 0px 10px 1px;
+    float: left;
+}
+#c1 > ul {
+    width: 180px;
+    margin:auto;
+}
+#c1 > h3{
+    text-shadow: 1px 1px 3px black ;
+}
+#c2{
+    display: inline-block;
+    margin: 20px 1vw 60px 1vw;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 260px;
+    padding: 10px;
+    color: white;
+    height: 420px;
+    line-height: 33px;
+    box-shadow: black inset 0px 0px 10px 1px;
+    float: left;
+}
+#c2 > h3{
+    padding-top: 2px;
+    text-shadow: 1px 1px 3px black ;
+}
+#c2 > p {
+    margin-top: 5px;
+    height: 350px;
+    padding: 5px 20px;
+}
+#c3{
+    display: inline-block;
+    margin: 20px 1vw 60px 1vw;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 260px;
+    padding: 10px;
+    color: white;
+    height: 420px;
+    line-height: 33px;
+    box-shadow: black inset 0px 0px 10px 1px;
+    float: left;
+}
+#c3 > h3{
+    padding-top: 2px;
+    text-shadow: 1px 1px 3px black ;
+}
+#c3 > p {
+    margin-top: 5px;
+    height: 350px;
+    padding: 5px 20px;
+    font-size: 16px;
+    line-height: 28px;
+}
+.fundotransp{
+    background-color: rgba(0, 0, 0, 0.548);
+}
