@@ -1,11 +1,16 @@
 @charset "UTF-8";
-
+p,h1,h2,h3:hover{
+    cursor: context-menu;
+}
+button:hover{
+    cursor: pointer;
+}
 *{
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-color: #1F5661;
+    background-color: #8ED7E5;
     min-width: 250px;
 }
 header{
@@ -19,6 +24,14 @@ header > h1{
     color: white;
     font-size: 50px;
 }
+header > h1 > a{
+    text-decoration: none;
+    color: white;
+}
+header > h1 > a:hover{
+    color: #1F5661;
+    transition: 0.1s;
+}
 header > p{
     margin: 0px auto 40px auto;
     color: white;
@@ -29,7 +42,7 @@ header > p{
 }
 header > div{
     padding: 0px;
-    background-color: #8ED7E5;
+    background-color:#1F5661 ;
     word-spacing: 50px;
     text-align: center;
     height: auto;
@@ -45,20 +58,23 @@ header > div > p{
     margin-left: auto;
     margin-right: auto;
 }
+header > div > p:hover{
+    cursor: context-menu;
+}
 header > div > p >a{
     word-spacing: 2px;
     text-decoration: none;
-    color: #1F5661;
+    color: #8ED7E5;
     font-weight: bold;
 }
 header > div > p > a:hover{
     color: #222d30;
+    transition: 0.1s;
 }
 main{
     padding: 10px 10px 10px 20px;
-    background-image: url(imagens/wallpaper006.jpg);
+    background-image: url(imagens/160-1609789_gradiente-azul-claro.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     margin: 0px auto 0px auto;
     max-width: 1000px;
@@ -182,4 +198,16 @@ main > div{
 }
 .fundotransp{
     background-color: rgba(0, 0, 0, 0.548);
+}
+#rodape{
+    text-align: center;
+    background-color: black;
+    height: 18px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+#rodape > a{
+    text-decoration: none;
+    color: cyan;
 }
