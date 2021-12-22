@@ -6,6 +6,7 @@
 }
 body{
     background-color: #1F5661;
+    min-width: 300px;
 }
 header{
     text-align: center;
@@ -37,6 +38,11 @@ header > div{
 }
 header > div > p{
     line-height: 65px;
+    min-width: 300px;
+    width: auto;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 header > div > p >a{
     word-spacing: 2px;
@@ -76,8 +82,10 @@ main > h1{
     padding-bottom: 35px;
 }
 #cabeçalhosec > article > p{
-    width: 400px;
-    margin: auto;
+    width: auto;
+    min-width: 300px;
+    max-width: 700px;
+    margin: auto 50px auto 50px;
     background-color: rgba(0, 0, 0, 0.349);
     padding: 6px;
     border-radius: 2px;
