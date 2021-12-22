@@ -6,7 +6,7 @@
 }
 body{
     background-color: #1F5661;
-    min-width: 300px;
+    min-width: 250px;
 }
 header{
     text-align: center;
@@ -25,6 +25,7 @@ header > p{
     min-width: 300px;
     max-width: 900px;
     text-align: center;
+    line-height: 25px;
 }
 header > div{
     padding: 0px;
@@ -74,7 +75,7 @@ main > h1{
     background-attachment: fixed;
     background-size: cover;
     width: auto;
-    margin: 20px 40px 40px 40px;
+    margin: 20px 40px 40px 20px;
     color: white;
     box-shadow: inset black 0px 0px 8px 1px;
 }
@@ -84,9 +85,10 @@ main > h1{
 #cabeçalhosec > article > p{
     width: auto;
     height: auto;
-    min-width: 300px;
+    min-width: 250px;
     max-width: 700px;
-    margin: auto;
+    margin-left: 20%;
+    margin-right: 20%;
     background-color: rgba(0, 0, 0, 0.350);
     padding: 6px;
     border-radius: 2px;
