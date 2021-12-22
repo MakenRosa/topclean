@@ -19,8 +19,11 @@ header > h1{
     font-size: 50px;
 }
 header > p{
-    margin: 0px 80px 40px 80px;
+    margin: 0px auto 40px auto;
     color: white;
+    min-width: 300px;
+    max-width: 900px;
+    text-align: center;
 }
 header > div{
     padding: 0px;
