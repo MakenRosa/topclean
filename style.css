@@ -85,13 +85,14 @@ main > h1{
 #cabeçalhosec > article > p{
     width: auto;
     height: auto;
-    min-width: 250px;
+    min-width: auto;
     max-width: 700px;
     margin-left: 20%;
     margin-right: 20%;
     background-color: rgba(0, 0, 0, 0.349);
     padding: 6px;
     border-radius: 2px;
+    text-align: center;
 }
 .botao{
     margin-top: 40px;
