@@ -97,6 +97,7 @@ main > h1{
 }
 #cabeçalhosec > h2{
     padding-bottom: 35px;
+    font-size: 35px;
 }
 #cabeçalhosec > article > p{
     width: auto;
