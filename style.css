@@ -31,7 +31,7 @@ header > div{
     background-color: #8ED7E5;
     word-spacing: 50px;
     text-align: center;
-    height: 4em;
+    height: auto;
     border: 1px solid black;
     border-left: 0px;
     border-right: 0px;
@@ -83,9 +83,10 @@ main > h1{
 }
 #cabeçalhosec > article > p{
     width: auto;
+    height: auto;
     min-width: 300px;
     max-width: 700px;
-    margin: auto 50px auto 50px;
+    margin: auto;
     background-color: rgba(0, 0, 0, 0.349);
     padding: 6px;
     border-radius: 2px;
