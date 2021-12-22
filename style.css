@@ -95,11 +95,16 @@ main > h1{
     text-align: center;
 }
 .botao{
-    margin-top: 40px;
+    margin: 40px auto -25px auto;
     color: white;
     background-color: rgb(46, 45, 45);
     border-radius: 6px;
-    font-size: 18px;
+    font-size: 16px;
+    width: 150px;
+    height: 30px;
+    border: 1px inset;
+    display: block;
+    text-align: center;
 }
 main > div{
     min-height: 400px;
