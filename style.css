@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-color: #455F64;
+    background-color: #1F5661;
 }
 header{
     text-align: center;
@@ -27,7 +27,7 @@ header > p{
 }
 header > div{
     padding: 0px;
-    background-color: #8ED7E6;
+    background-color: #8ED7E5;
     word-spacing: 50px;
     text-align: center;
     height: 4em;
