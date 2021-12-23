@@ -102,7 +102,7 @@ main > h1{
     background-attachment: fixed;
     background-size: cover;
     width: auto;
-    max-width: 990px;
+    max-width: 900px;
     margin: 20px auto 40px auto;
     color: white;
     box-shadow: inset black 0px 0px 8px 1px;
