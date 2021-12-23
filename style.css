@@ -49,6 +49,7 @@ header > div{
     border: 1px solid black;
     border-left: 0px;
     border-right: 0px;
+    box-shadow: rgba(0, 0, 0, 0.247) 0px 2px 4px 1px;
 }
 header > div > p{
     line-height: 65px;
@@ -62,7 +63,7 @@ header > div > p:hover{
     cursor: context-menu;
 }
 header > div > p >a{
-    word-spacing: 2px;
+    word-spacing: auto;
     text-decoration: none;
     color: #8ED7E5;
     font-weight: bold;
@@ -70,6 +71,9 @@ header > div > p >a{
 header > div > p > a:hover{
     color: #222d30;
     transition: 0.1s;
+    text-shadow: rgba(65, 179, 194, 0.514) 0px 0px 5px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
 }
 main{
     padding: 10px 10px 10px 20px;
@@ -77,15 +81,16 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0px auto 0px auto;
-    max-width: 1000px;
+    max-width: 1100px;
     min-height: 300px;
     display: block;
+    box-shadow: rgba(0, 0, 0, 0.300) 0px 0px 10px 1px;
 }
 main > h1{
     padding: 20px 0px 10px 20px;
 }
 #cabeçalhosec{
-    padding: 40px 10px 70px 10px;
+    padding: 40px 10px 50px 10px;
     text-align: center;
     background-image: url(imagens/wallpaper002.jpg);
     background-attachment: fixed;
@@ -98,12 +103,15 @@ main > h1{
 #cabeçalhosec > h2{
     padding-bottom: 35px;
     font-size: 35px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.548);
+
 }
 #cabeçalhosec > article > p{
     width: auto;
     height: auto;
     min-width: auto;
-    max-width: 700px;
+    max-width: 650px;
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(0, 0, 0, 0.349);
@@ -115,12 +123,11 @@ main > h1{
     margin: 40px auto -25px auto;
     color: white;
     background-color: rgb(46, 46, 46);
-    border-radius: 6px;
+    border-radius: 16px;
     font-size: 16px;
     width: 150px;
-    height: 30px;
+    height: 40px;
     border: 1px inset;
-    display: block;
     text-align: center;
 }
 main > div{
@@ -129,7 +136,7 @@ main > div{
     margin-right: auto;
 }
 #content{
-    margin-left: 3%;
+    margin-left: 6%;
 }
 #c1{
     display: inline-block;
