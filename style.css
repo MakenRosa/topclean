@@ -63,7 +63,7 @@ header > div > p:hover{
     cursor: context-menu;
 }
 header > div > p >a{
-    word-spacing: auto;
+    word-spacing: 2px;
     text-decoration: none;
     color: #8ED7E5;
     font-weight: bold;
