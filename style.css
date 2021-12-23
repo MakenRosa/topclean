@@ -225,6 +225,7 @@ main > div{
     text-align: center;
     background-color: black;
     height: 18px;
+    width: auto;
     color: white;
     text-decoration: none;
     font-size: 14px;
