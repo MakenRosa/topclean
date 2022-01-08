@@ -1,5 +1,5 @@
 @charset "UTF-8";
-img#molhado{
+/*img#molhado{
     animation: secando 8s;
     margin: -1220px;
     padding: -100px;
@@ -33,10 +33,10 @@ img#rodo{
 }
 @keyframes div{
     0% {
-        transform: translateX(-30vw) rotate(-90deg) ; /*primeira esquerda para a direita*/
+        transform: translateX(-30vw) rotate(-90deg) ;
     }
     10% {
-        transform: translate(90vw, 0) rotate(-90deg)/*chega na direita em cima*/
+        transform: translate(90vw, 0) rotate(-90deg)
     }
     20% {
         transform: translate(90vw, 25vh) rotate(360deg);
@@ -62,6 +62,7 @@ img#rodo{
        opacity: 0%;
    }
 }
+*/
 p,h1,h2,h3:hover{
     cursor: context-menu;
 }
