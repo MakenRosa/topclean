@@ -1,4 +1,70 @@
 @charset "UTF-8";
+img#molhado{
+    animation: secando 8s;
+    margin: -1220px;
+    padding: -100px;
+    transition-property: opacity;
+    animation-fill-mode: forwards;
+
+}
+@keyframes secando{
+    from{
+        opacity: 100%;
+    }
+    to{
+        opacity: 0%;
+    }
+}
+
+
+img#rodo{
+    display: flex;
+    margin: -220px;
+    padding: -100px;
+    background-color: none;
+    animation: div 8s;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    width: 500px;
+    height: 420px;
+    align-items: center;
+    transition-property: background-color border-radius;
+    transition-duration: 1s, 0.5s;
+    color: wheat; 
+    text-align: center;
+    animation-fill-mode: forwards;
+}
+@keyframes div{
+    0% {
+        transform: translateX(-30vw) rotate(-90deg) ; /*primeira esquerda para a direita*/
+    }
+    10% {
+        transform: translate(90vw, 0) rotate(-90deg)/*chega na direita em cima*/
+    }
+    20% {
+        transform: translate(90vw, 25vh) rotate(360deg);
+    }
+    30% {
+        transform: translate(10vh, 25vh)rotate(360deg);
+    }
+    40% {
+        transform: translate(10vw, 50vh) rotate(-90deg);
+    }
+    50% {
+        transform: translate(90vw, 50vh) rotate(-90deg);
+    }
+    60% {
+        transform: translate(90vw, 75vh) rotate(360deg);
+        opacity: 100%;
+}
+    70%{
+        transform: translate(-30vw, 75vh) rotate(360deg);
+        opacity: 0%;
+    }
+   100%{
+       opacity: 0%;
+   }
+}
 p,h1,h2,h3:hover{
     cursor: context-menu;
 }
