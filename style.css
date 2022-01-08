@@ -5,7 +5,6 @@ img#molhado{
     padding: -100px;
     transition-property: opacity;
     animation-fill-mode: forwards;
-
 }
 @keyframes secando{
     from{
@@ -15,8 +14,6 @@ img#molhado{
         opacity: 0%;
     }
 }
-
-
 img#rodo{
     display: flex;
     margin: -220px;
