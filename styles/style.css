@@ -132,7 +132,7 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-main h1, h2, h3{
+    main h1, h2{
     font-family: 'Raleway', sans-serif;
     text-align: center;
 }
@@ -156,6 +156,12 @@ main h2{
     margin-top: 20px;
     margin-bottom: 20px;
     padding-left: 30px;
+}
+
+main h3{
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 20px;
 }
 
 main p {
@@ -213,6 +219,7 @@ main > section#home > div#missao-da-empresa > p > span {
 main > section > div.home {
     border-radius: 10px;
     margin: 10px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
 }
 
 main > section > div.home#limpeza-vidros {
@@ -230,6 +237,7 @@ main > section > div.home > p{
     margin-bottom: 0px;
     padding: 15px;
     font-weight: 600;
+    border-radius: 0 0 10px 10px;
 }
 
 main > section > div.home > h2{
@@ -238,6 +246,28 @@ main > section > div.home > h2{
     margin-bottom: 0px;
 }
 
+#servicos > h2 {
+    background-image: linear-gradient(to left, white, var(--secondary-color));
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 0px;
+}
+
+.servicos  h3 {
+    background-image: linear-gradient(to left, white, #e23f7362);
+    border-radius: 10px 10px 0 0;
+    padding: 0px 0px 0px 10px;
+    margin-top: 20px;
+}
+
+main > section#servicos > div.servicos > p {
+    margin-bottom: 10px;
+}
+
+main > section#servicos > div.servicos > img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
+}
 
 
 form {
