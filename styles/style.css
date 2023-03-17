@@ -8,9 +8,12 @@
     --tertiary-color: #e23f72;
     --quaternary-color: #398e99;
 
-    --primary-font: 'Raleway', sans-serif;
-    --secondary-font: 'Mulish', sans-serif;
-    --tertiary-font: 'Open Sans', sans-serif;
+    --primary-font:
+    'Raleway', sans-serif;
+    --secondary-font:
+    'Mulish', sans-serif;
+    --tertiary-font:
+    'Open Sans', sans-serif;
 }
 
 *{
@@ -25,6 +28,7 @@ html, body {
     line-height: 1.5;
     color: #333;
     background-color: var(--secondary-color);
+    width: 100vw;
 }
 
 header {
@@ -72,6 +76,15 @@ header input, nav {
     box-shadow: 0px 5px 4px rgba(3, 3, 3, 0.171);
 }
 
+header a {
+    width: 100vw;
+    height: 100%;
+    color: white;
+    font-weight: 300;
+    font-family: var(--tertiary-font);
+    text-decoration: none;
+}
+
 header > nav {
     justify-content: space-between;
     align-items: center;
@@ -97,18 +110,13 @@ header > nav > ul > li > a {
     font-family: var(--tertiary-font);
 }
 
-header a {
-    width: 100vw;
-    height: 100%;
-    color: white;
-    font-weight: 300;
-    font-family: var(--tertiary-font);
-    text-decoration: none;
-}
-
 header > p {
     font-weight: 200;
-    
+    padding: 10px;
+}
+
+header > nav > ul {
+    background-color: var(--secondary-color);
 }
 
 header > nav > ul > li:hover {
@@ -125,11 +133,9 @@ main {
     background-color: white;
     color: black;
     font-family: var(--secondary-font);
-    margin: 15px auto;
-    width: 90vw;
-    border-radius: 10px;
+    margin: 0 auto;
+    width: 100vw;
     max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
     main h1, h2{
@@ -142,12 +148,8 @@ main h1{
     font-size: 2.5em;
     font-weight: bold;
     text-align: center;
-    background-image: linear-gradient(to right, var(--primary-color), white, var(--primary-color));
+    background-color: var(--primary-color);
     width: 100%;
-    border-radius: 10px 10px 0 0;
-    border-bottom: #e23f732d;
-    border-bottom-style: solid;
-    border-bottom-width: 5px;
 }
 
 main h2{
@@ -155,33 +157,32 @@ main h2{
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding-left: 30px;
 }
 
 main h3{
     font-size: 1.2em;
     font-weight: 600;
-    padding: 20px;
 }
 
 main p {
     font-family: 'Mulish', sans-serif;
     text-indent: 30px;
     text-align: justify;
+    font-size: 1em;
+    padding: 15px 25px; 
 }
 
 main > section {
     margin: 0 auto;
-    width: 90%;
-    border-radius: 10px;
+    width: 100%;
     max-width: 800px;
     margin-bottom: 30px;
+
 }
 
 main > section#home {
     margin: 0 auto;
     width: 100%;
-    border-radius: 10px;
     max-width: 800px;
 }
 
@@ -191,7 +192,6 @@ main > section#home > div#missao-da-empresa {
     background-size: cover;
     height: 280px;
     width: 100%;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.37);
 }
 
 main > section#home > div#missao-da-empresa > p {
@@ -203,7 +203,7 @@ main > section#home > div#missao-da-empresa > p {
     color: white;
     position: absolute;
     top: 65%;
-    left: 78%;
+    left: 70%;
     transform: translate(-50%, -50%);
     background-color: #127599b7;
     border-radius: 10px;
@@ -217,9 +217,6 @@ main > section#home > div#missao-da-empresa > p > span {
 }
 
 main > section > div.home {
-    border-radius: 10px;
-    margin: 10px 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
 }
 
 main > section > div.home#limpeza-vidros {
@@ -233,39 +230,33 @@ main > section > div.home#limpeza-fachadas {
 }
 
 main > section > div.home > p{
-    background-color: #ffffffce;
-    margin-bottom: 0px;
-    padding: 15px;
-    font-weight: 600;
-    border-radius: 0 0 10px 10px;
+    background-color: #ffffff;
+    
 }
 
 main > section > div.home > h2{
     background-image: linear-gradient(to left, white, #e23f7394);
-    border-radius: 10px 10px 0 0;
     margin-bottom: 0px;
 }
 
-#servicos > h2 {
+#servicos h2 {
     background-image: linear-gradient(to left, white, var(--secondary-color));
-    border-radius: 10px 10px 0 0;
-    margin-bottom: 0px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .servicos  h3 {
     background-image: linear-gradient(to left, white, #e23f7362);
-    border-radius: 10px 10px 0 0;
-    padding: 0px 0px 0px 10px;
+    width: 100%;
     margin-top: 20px;
+    padding-left: 25px;
 }
 
 main > section#servicos > div.servicos > p {
-    margin-bottom: 10px;
 }
 
 main > section#servicos > div.servicos > img{
     width: 100%;
-    border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
 }
 
