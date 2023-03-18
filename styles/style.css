@@ -2,33 +2,41 @@
 @import url('../fontes/Mulish/static/*.ttf');
 @import url('../fontes/Raleway/static/*.ttf');
 @import url('../fontes/OpenSans/static/*.ttf');
-:root{
+
+:root {
     --primary-color: #3d9daa;
     --secondary-color: #127599;
     --tertiary-color: #e23f72;
     --quaternary-color: #398e99;
 
     --primary-font:
-    'Raleway', sans-serif;
+        'Raleway', sans-serif;
     --secondary-font:
-    'Mulish', sans-serif;
+        'Mulish', sans-serif;
     --tertiary-font:
-    'Open Sans', sans-serif;
+        'Open Sans', sans-serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     font-family: var(--primary-font);
     font-size: 16px;
     line-height: 1.5;
     color: #333;
     background-color: var(--secondary-color);
     width: 100vw;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 header {
@@ -37,30 +45,43 @@ header {
     font-family: var(--secondary-font);
 }
 
-header > p {
+header>p {
+    display: block;
     margin-bottom: 10px;
+    font-weight: 200;
+    padding: 10px;
+    width: fit-content
 }
 
-header > p:hover {
+
+header>p>a {
+    padding: 6px;
+}
+
+header p a:hover {
     background-color: var(--tertiary-color);
-    transition: 0.3s;
-}
-
-header > p > a{
-    padding-left: 10px;
-}
-
-
-header > p > span{
+    border-radius: 4px;
+    transition: 0.4s;
+  }
+header>p>span {
     padding-left: 10px;
     font-weight: bold;
 }
 
-header > img {
+header a {
+    width: 100vw;
+    height: 100%;
+    color: white;
+    font-weight: 300;
+    font-family: var(--tertiary-font);
+}
+
+header>img {
     width: 200px;
 }
 
-header input, nav {
+header input,
+nav {
     display: none;
 }
 
@@ -76,26 +97,18 @@ header input, nav {
     box-shadow: 0px 5px 4px rgba(3, 3, 3, 0.171);
 }
 
-header a {
-    width: 100vw;
-    height: 100%;
-    color: white;
-    font-weight: 300;
-    font-family: var(--tertiary-font);
-    text-decoration: none;
-}
-
-header > nav {
+header>nav {
     justify-content: space-between;
     align-items: center;
     text-align: center;
 }
 
-header > nav > ul {
+header>nav>ul {
     list-style-type: none;
+    background-color: var(--secondary-color);
 }
 
-header > nav > ul > li {
+header>nav>ul>li {
     margin: 5px 5px;
     padding: 5px 0px;
     background-color: var(--primary-color);
@@ -103,28 +116,22 @@ header > nav > ul > li {
     font-weight: 500;
 }
 
-header > nav > ul > li > a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    font-family: var(--tertiary-font);
-}
-
-header > p {
-    font-weight: 200;
-    padding: 10px;
-}
-
-header > nav > ul {
-    background-color: var(--secondary-color);
-}
-
-header > nav > ul > li:hover {
+header>nav>ul>li:hover {
     background-color: var(--tertiary-color);
     transition: 0.3s;
 }
 
-header > nav > ul > li > a:hover {
+header>nav>ul>li>a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-family: var(--tertiary-font);
+    width: 100%;
+    height: 100%;
+}
+
+header>nav>ul>li>a:hover {
     color: white;
     transition: 0.3s;
 }
@@ -138,28 +145,27 @@ main {
     max-width: 800px;
 }
 
-    main h1, h2{
+main h1,
+h2 {
     font-family: 'Raleway', sans-serif;
     text-align: center;
 }
 
-main h1{
-    font-family: 'Raleway', sans-serif;
+main h1 {
     font-size: 2.5em;
     font-weight: bold;
-    text-align: center;
     background-color: var(--primary-color);
     width: 100%;
 }
 
-main h2{
+main h2 {
     font-size: 1.8em;
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-main h3{
+main h3 {
     font-size: 1.2em;
     font-weight: 600;
 }
@@ -169,24 +175,17 @@ main p {
     text-indent: 30px;
     text-align: justify;
     font-size: 1em;
-    padding: 15px 25px; 
+    padding: 15px 25px;
 }
 
-main > section {
+main>section {
     margin: 0 auto;
     width: 100%;
     max-width: 800px;
     margin-bottom: 30px;
-
 }
 
-main > section#home {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 800px;
-}
-
-main > section#home > div#missao-da-empresa {
+main>section#home>div#missao-da-empresa {
     position: relative;
     background: white url(../imagens/topclean_background.jpg) no-repeat center center;
     background-size: cover;
@@ -194,11 +193,10 @@ main > section#home > div#missao-da-empresa {
     width: 100%;
 }
 
-main > section#home > div#missao-da-empresa > p {
+main>section#home>div#missao-da-empresa>p {
     text-indent: 0;
     width: 180px;
     font-size: 1em;
-    font-weight: 500;
     text-align: left;
     color: white;
     position: absolute;
@@ -211,30 +209,29 @@ main > section#home > div#missao-da-empresa > p {
     font-weight: bold;
 }
 
-main > section#home > div#missao-da-empresa > p > span {
+main>section#home>div#missao-da-empresa>p>span {
     font-size: 1em;
     font-style: italic;
 }
 
-main > section > div.home {
-}
+main>section>div.home {}
 
-main > section > div.home#limpeza-vidros {
+main>section>div.home#limpeza-vidros {
     background: white url(../imagens/img-limpeza-de-vidros.jpg) no-repeat center center;
     background-size: cover;
 }
 
-main > section > div.home#limpeza-fachadas {
+main>section>div.home#limpeza-fachadas {
     background: white url(../imagens/img-limpeza-de-fachadas.jpg) no-repeat center center;
     background-size: cover;
 }
 
-main > section > div.home > p{
+main>section>div.home>p {
     background-color: #ffffff;
-    
+
 }
 
-main > section > div.home > h2{
+main>section>div.home>h2 {
     background-image: linear-gradient(to left, white, #e23f7394);
     margin-bottom: 0px;
 }
@@ -245,19 +242,80 @@ main > section > div.home > h2{
     margin-bottom: 20px;
 }
 
-.servicos  h3 {
+.servicos h3 {
     background-image: linear-gradient(to left, white, #e23f7362);
     width: 100%;
     margin-top: 20px;
     padding-left: 25px;
 }
 
-main > section#servicos > div.servicos > p {
-}
-
-main > section#servicos > div.servicos > img{
+main>section#servicos>div.servicos>img {
     width: 100%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
+}
+
+main>#promocoes> h2 {
+    background-image: linear-gradient(to left, white, var(--secondary-color));
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+main>#promocoes>#parceria {
+    background: linear-gradient(to bottom right, #fdf497 0%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    color: white;
+    font-family: var(--secondary-font);
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 800px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+main>#promocoes>#parceria>h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main>#promocoes>#parceria>p>a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--tertiary-font);
+    width: 100%;
+    height: 100%;
+}
+
+main>#promocoes>.promocao {
+    background-color: var(--tertiary-color);
+    color: black;
+    font-family: var(--secondary-font);
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 800px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+main>#promocoes>.promocao> ul {
+    margin-left: 20px;
+}
+
+main>#promocoes>.promocao> ul>li {
+    list-style-type: disc;
+    margin-bottom: 10px;
+}
+
+main>#promocoes>#base {
+    background: linear-gradient(to bottom right, #3d9daa 0%, #6ab7c4 45%,#8fc5ce 60%,#b2d3d8 90%);
+}
+
+main>#promocoes>#fidelidade {
+    background: linear-gradient(to bottom right, #e23f72 0%, #e6678c 45%,#ea8fa6 60%,#eeb7c0 90%);
+}
+
+main>#promocoes>#premium {
+    background: linear-gradient(to bottom right, #DAA520 0%, #DDB53A 45%,#DEBB54 60%,#E0C16E 90%);
 }
 
 
