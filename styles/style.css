@@ -318,6 +318,39 @@ main>#promocoes>#premium {
     background: linear-gradient(to bottom right, #DAA520 0%, #DDB53A 45%,#DEBB54 60%,#E0C16E 90%);
 }
 
+main>#promocoes>p{
+    text-indent: 0;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+main>#sobre{
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: var(--secondary-font);
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 800px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: var(--secondary-font);
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 800px;
+    padding: 10px;
+    text-align: center;
+}
+
+footer> p{
+    
+}
+
 
 form {
     display: none;
