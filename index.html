@@ -1,178 +1,366 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Top Clean oferece serviços profissionais de limpeza de vidros, fachadas, vitrines e outros. Nós temos a experiência e os equipamentos necessários para deixá-los brilhando.">
-    <meta name="keywords" content="limpeza, vidros, fachadas, vitrines, serviços, profissionais">
-    <meta name="author" content="Top Clean">
-    <meta name="robots" content="index,follow">
-    <meta property="og:title" content="Top Clean - Serviços de Limpeza Profissional">
-    <meta property="og:description" content="Top Clean oferece serviços profissionais de limpeza de vidros, fachadas, vitrines e outros. Nós temos a experiência e os equipamentos necessários para deixá-los brilhando.">
-    <meta property="og:image" content="imagens/topclean_background.jpg">
-    <meta property="og:url" content="https://makenrosa.github.io/topclean">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="styles/style.css" media="all">
-    <link rel="stylesheet" href="styles/media-query.css">
-    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.css">
-    <title>Top Clean - Serviços de Limpeza Profissional</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Top Clean — Limpeza de Vidros, Fachadas e Vitrines</title>
+  <meta name="description" content="Serviços profissionais de limpeza de vidros, fachadas e vitrines. Equipe qualificada, segurança em altura e resultado impecável. Peça seu orçamento pelo WhatsApp." />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#127599" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Top Clean — Limpeza de Vidros e Fachadas" />
+  <meta property="og:description" content="Equipe profissional, segurança e resultados brilhando. Peça seu orçamento pelo WhatsApp." />
+  <meta property="og:image" content="imagens/topclean_background.jpg" />
+  <meta property="og:url" content="https://makenrosa.github.io/topclean" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Open+Sans:wght@400;600&family=Raleway:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/style.css" media="all" />
+  <link rel="stylesheet" href="styles/media-query.css" media="all" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Top Clean",
+    "image": "imagens/topclean_background.jpg",
+    "description": "Limpeza de vidros, fachadas e vitrines.",
+    "url": "https://makenrosa.github.io/topclean",
+    "telephone": "+55 48 98871-5207",
+    "areaServed": "BR",
+    "sameAs": ["https://www.instagram.com/topclean.serv/"]
+  }
+  </script>
 </head>
-
 <body>
-    <header>
-        <img src="imagens/leko-limpa-crop.png" alt="Logo Top Clean" width="320px">
-        <p>Orçamento rápido <span>></span><a
-                href="https://api.whatsapp.com/send/?phone=%2B5548988715207&text&type=phone_number&app_absent=0" target="_blank">(48)
-                98871-5207</a></p>
-        <input type="checkbox" name="burguer" id="burguer" onclick="mostrarMenu()">
-        <label for="burguer" id="burguer-label">Menu</label>
-        <nav id="menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#promocoes">Promoções</a>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="#sobre">Sobre</a></li>
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container">
+      <p class="topbar__text">
+        Orçamento rápido:
+        <a class="link-cta" href="https://wa.me/5548988715207?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20da%20Top%20Clean." target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i> (48) 98871-5207
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="header">
+    <div class="container header__row">
+      <a class="brand" href="#home" aria-label="Topo da página">
+        <img src="imagens/leko-limpa-crop.png" alt="Top Clean" width="160" height="48" loading="eager" />
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Abrir menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="nav" id="siteNav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#promocoes">Planos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn--ghost header__cta" href="https://wa.me/5548988715207?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20da%20Top%20Clean." target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i> Orçamento
+      </a>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- Hero -->
+    <section class="hero">
+      <picture>
+        <img class="hero__bg" src="imagens/topclean_background.jpg" alt="" aria-hidden="true" loading="eager" />
+      </picture>
+      <div class="container hero__content">
+        <h1 class="hero__title">Seu espaço brilhando, sua imagem valorizada.</h1>
+        <p class="hero__subtitle">Limpeza profissional de <strong>vidros</strong>, <strong>fachadas</strong> e <strong>vitrines</strong> com segurança e qualidade.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="https://wa.me/5548988715207?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20da%20Top%20Clean." target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Pedir orçamento
+          </a>
+          <a class="btn btn--white" href="#servicos">Ver serviços</a>
+        </div>
+        <p class="hero__mission">
+          “Buscar a satisfação dos nossos clientes e inspirar um valor social de um ambiente limpo e saudável.”
+        </p>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="servicos" class="section">
+      <div class="container">
+        <h2 class="section__title">Serviços</h2>
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <img class="card__img" src="imagens/img-limpeza-de-vidros.jpg" alt="Limpeza de vidros em diferentes alturas" loading="lazy" />
+            <div class="card__body">
+              <h3 class="card__title">Limpeza de Vidros</h3>
+              <p>Vidros internos e externos, lojas, casas, vitrines e espelhos. Inclui serviços em altura com segurança total.</p>
+              <a class="card__cta" href="https://wa.me/5548988715207?text=Tenho%20interesse%20em%20Limpeza%20de%20Vidros." target="_blank" rel="noopener">Agendar <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <img class="card__img" src="imagens/img-limpeza-de-fachadas.jpg" alt="Limpeza de fachada comercial" loading="lazy" />
+            <div class="card__body">
+              <h3 class="card__title">Limpeza de Fachadas</h3>
+              <p>Equipe qualificada, equipamentos adequados e procedimentos padronizados para restaurar a aparência da sua fachada.</p>
+              <a class="card__cta" href="https://wa.me/5548988715207?text=Tenho%20interesse%20em%20Limpeza%20de%20Fachadas." target="_blank" rel="noopener">Agendar <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <img class="card__img" src="imagens/limpeza-residencial.jpg" alt="Equipe realizando limpeza residencial" loading="lazy" />
+            <div class="card__body">
+              <h3 class="card__title">Limpeza Residencial</h3>
+              <p>Qualidade, confiança e cuidado nos detalhes para sua casa. Atendimento personalizado e pontualidade.</p>
+              <a class="card__cta" href="https://wa.me/5548988715207?text=Tenho%20interesse%20em%20Limpeza%20Residencial." target="_blank" rel="noopener">Agendar <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <img class="card__img" src="imagens/limpeza-comercial.jpg" alt="Limpeza comercial em loja com vitrine" loading="lazy" />
+            <div class="card__body">
+              <h3 class="card__title">Limpeza Comercial</h3>
+              <p>Vidros, vitrines e áreas de alto fluxo sempre impecáveis para valorizar a sua marca.</p>
+              <a class="card__cta" href="https://wa.me/5548988715207?text=Tenho%20interesse%20em%20Limpeza%20Comercial." target="_blank" rel="noopener">Agendar <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <img class="card__img" src="imagens/limpeza-predial.jpg" alt="Técnica de limpeza predial com equipamentos de segurança" loading="lazy" />
+            <div class="card__body">
+              <h3 class="card__title">Limpeza Predial</h3>
+              <p>Segurança é prioridade: rapel, EPIs e procedimentos de alto padrão para prédios e condomínios.</p>
+              <a class="card__cta" href="https://wa.me/5548988715207?text=Tenho%20interesse%20em%20Limpeza%20Predial." target="_blank" rel="noopener">Agendar <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plans / Promoções -->
+    <section id="promocoes" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Planos que valorizam sua visibilidade</h2>
+
+        <div class="promo-steps reveal">
+          <h3>Parceria Social com Desconto</h3>
+          <ol>
+            <li>Siga <a href="https://www.instagram.com/topclean.serv/" target="_blank" rel="noopener">@topclean.serv</a> no Instagram;</li>
+            <li>Comente e compartilhe a foto da promoção;</li>
+            <li>Deixe sua avaliação no Google (feedback).</li>
+          </ol>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="price-card reveal" aria-label="Plano Base">
+            <header class="price-card__header">
+              <h3>Plano Base</h3>
+              <p class="price-card__tagline">Limpeza única</p>
+            </header>
+            <ul class="price-card__list">
+              <li>Transformação do seu espaço com limpeza especializada;</li>
+              <li>Orçamento local sem compromisso;</li>
+              <li>Preço fechado por serviço;</li>
+              <li>Atendimento personalizado.</li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h1>Top Clean</h1>
+            <a class="btn btn--outline" href="https://wa.me/5548988715207?text=Quero%20o%20Plano%20Base." target="_blank" rel="noopener">Quero este plano</a>
+          </article>
 
-            <div id="missao-da-empresa">
-                <p>Missão da empresa: <span id="missao-empresa">“Buscar a satisfação dos nossos clientes e inspirar o
-                        mundo
-                        a criar um valor social de um ambiente limpo e saudável.”</span></p>
-            </div>
-            <div class="home" id="limpeza-vidros">
-                <h2>Limpeza de vidros</h2>
-                <p>Não importa se seus vidros são grandes ou pequenos, internos ou externos, nós temos a experiência e
-                    os equipamentos necessários para deixá-los brilhando. Nossos serviços incluem limpeza de lojas,
-                    casas, vitrines, espelhos, entre outros. Oferecemos também serviços em altura.</p>
-            </div>
-            <div class="home" id="limpeza-fachadas">
-                <h2>Limpeza de fachadas</h2>
-                <p>Não importa o tamanho ou a complexidade do seu projeto de limpeza, nossa equipe altamente qualificada
-                    e equipada está pronta para fornecer serviços profissionais e eficientes em limpeza de fachadas.</p>
+          <article class="price-card price-card--featured reveal" aria-label="Plano Fidelidade">
+            <div class="price-card__badge" aria-hidden="true">Mais Popular</div>
+            <header class="price-card__header">
+              <h3>Plano Fidelidade</h3>
+              <p class="price-card__tagline">Limpeza mensal</p>
+            </header>
+            <ul class="price-card__list">
+              <li>Data garantida todo mês;</li>
+              <li>Investimento menor que limpezas avulsas;</li>
+              <li>Ambiente sempre apresentável para seus clientes.</li>
+            </ul>
+            <a class="btn btn--primary" href="https://wa.me/5548988715207?text=Quero%20o%20Plano%20Fidelidade." target="_blank" rel="noopener">Quero este plano</a>
+          </article>
 
-            </div>
-        </section>
-        <section id="servicos">
-            <h2>Serviços</h2>
-            <div class="servicos">
-                <h3>Limpeza Residencial</h3>
-                <p>Oferecemos serviços de limpeza residencial altamente qualificados para sua residência. Temos
-                    compromisso e confiança na qualidade de nossos serviços.</p>
-                <img src="imagens/limpeza-residencial.jpg" alt="Limpeza residencial">
-            </div>
-            <div class="servicos">
-                <h3>Limpeza Comercial</h3>
-                <p>Temos anos de experiência em limpezas comerciais, oferecendo serviços de limpeza de vidros e fachadas
-                    de alta qualidade e com comprometimento com o cliente.</p>
-                <img src="imagens/limpeza-comercial.jpg" alt="Limpeza comercial">
-            </div>
-            <div class="servicos">
-                <h3>Limpeza Predial</h3>
-                <p>Nós temos a segurança como prioridade em nossos serviços de limpeza predial, seja nas alturas com
-                    rapel ou no chão, temos equipamentos de segurança de última geração.</p>
-                <img src="imagens/limpeza-predial.jpg" alt="Limpeza predial">
-            </div>
-        </section>
-        <section id="promocoes">
-            <h2>Visibilidade não é custo, <br>é investimento!</h2>
-            <div id="parceria">
-                <h3>Parceria social com desconto</h3>
-                <p>Passo 1 - Siga o <a href="https://www.instagram.com/topclean.serv/"
-                        target="_blank">@topclean.serv</a> no instagram.</p>
-                <p>Passo 2 - Comente e Compartilhe a foto da promoção no seu instagram.</p>
-                <p><abbr title="Faça uma pesquisa no Google pelo nome da empresa.
-                    Encontre o perfil da empresa na seção de resultados de pesquisa.
-                    Clique no botão 'Avaliações' no perfil da empresa.
-                    Clique no botão 'Escrever uma avaliação' e forneça uma classificação de estrelas e escreva 
-                    seu comentário sobre sua experiência com a empresa.
-                    Clique em 'Publicar' para enviar sua avaliação.">Passo 3</abbr> - Dê o seu feedback na pesquisa do
-                    google.</p>
-            </div>
-            <div class="promocao" id="base">
-                <h3>Plano Base</h3>
-                <p>Limpeza única</p>
-                <ul>
-                    <li>Transformação incrível do seu espaço com os serviços de limpeza especializada da Top Clean;</li>
-                    <li>Limpeza parcial, com orçamento local, sem compromisso, preço único;</li>
-                    <li>Agendamento através de nossas linhas de contato;</li>
-                    <li>Atendimento personalizado.</li>
-                </ul>
-            </div>
-            <div class="promocao" id="fidelidade">
-                <h3>Plano Fidelidade</h3>
-                <p>Limpeza mensal</p>
-                <ul>
-                    <li>Você não precisa se preocupar em ficar na mão, com o plano mensal a sua data é garantida!</li>
-                    <li>Largue a limpeza parcial, seus investimentos com a limpeza mensal serão menores e lhe trarão um
-                        melhor retorno.</li>
-                    <li>Manter o seu local limpo pode aumentar sua visibilidade e atrair mais clientes em potencial. Com
-                        o nosso plano de limpeza mensal, você pode economizar dinheiro e garantir uma limpeza
-                        especializada completa.</li>
-                </ul>
-            </div>
-            <div class="promocao" id="premium">
-                <h3>Plano Premium</h3>
-                <p>Limpeza quinzenal</p>
-                <ul>
-                    <li>2 limpezas ao mês, sendo a segunda pela metade do preço;</li>
-                    <li>Sem preocupação com agendamento;</li>
-                    <li>Cultivamos o seu ambiente e o ambiente que o seu cliente deseja;</li>
-                    <li>Seu espaço o mês inteiro limpo, impulsionando a visibilidade física da sua loja;</li>
-                    <li>Resgate as pessoas que "passavam" direto pela sua loja.</li>
-                </ul>
-            </div>
-            <p>Quanto melhor o seu investimento, maior a sua visibilidade.</p>
-        </section>
-        <section id="sobre">
-            <h2>Sobre</h2>
-            <p>A Top Clean é uma empresa especializada em serviços profissionais de limpeza de vidros, fachadas,
-                vitrines e outros. Temos anos de experiência e equipamentos de última geração para garantir resultados
-                impecáveis. Além disso, oferecemos manutenção regular para manter suas fachadas limpas e livres da
-                velhice. Nossa equipe é amplamente treinada e qualificada, sempre buscando a satisfação dos nossos
-                clientes e inspirando o mundo a criar um valor social de um ambiente limpo e saudável.</p>
-        </section>
-        <section id="contato">
-            <h2>Entre em contato</h2>
-            <form action="enviar-mensagem.php" method="post">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem"></textarea>
-                <input type="submit" value="Enviar Mensagem">
-            </form>
-            <p><a href="https://api.whatsapp.com/send/?phone=%2B5548988715207&text&type=phone_number&app_absent=0"
-                    target="_blank">(48) 98871-5207<i class="fab fa-whatsapp"></i></a></p>
-            <p><a href="https://www.instagram.com/topclean.serv/">@topclean.serv<i class="fab fa-instagram"></i></a></p>
-            <p><a href="mailto:serv.topclean1@gmail.com">serv.topclean1@gmail.com<i class="fas fa-envelope"></i></a></p>
-        </section>
-        <footer>
-            <p>Copyright ©2022 Top Clean</p>
-        </footer>
-    </main>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-        function mostrarMenu() {
-            var menu = document.getElementById("menu");
-            if (menu.style.display === "block") {
-                menu.style.display = "none";
-            } else {
-                menu.style.display = "block";
-            }
-        }
-    </script>
+          <article class="price-card reveal" aria-label="Plano Premium">
+            <header class="price-card__header">
+              <h3>Plano Premium</h3>
+              <p class="price-card__tagline">Limpeza quinzenal</p>
+            </header>
+            <ul class="price-card__list">
+              <li>2 limpezas/mês (a 2ª com 50% off);</li>
+              <li>Sem preocupação com agendamento;</li>
+              <li>Loja impecável o mês inteiro.</li>
+            </ul>
+            <a class="btn btn--outline" href="https://wa.me/5548988715207?text=Quero%20o%20Plano%20Premium." target="_blank" rel="noopener">Quero este plano</a>
+          </article>
+        </div>
 
+        <p class="section__note">Quanto melhor o seu investimento, maior a sua visibilidade.</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2 class="section__title">Sobre a Top Clean</h2>
+        <div class="about">
+          <p>A Top Clean é especializada em limpeza de vidros, fachadas e vitrines. Unimos experiência, segurança em altura e equipamentos de ponta para um resultado impecável.</p>
+          <ul class="about__bullets">
+            <li>Equipe treinada e padronizada;</li>
+            <li>EPIs e procedimentos de segurança rigorosos;</li>
+            <li>Atendimento ágil e pontual;</li>
+            <li>Planos que cabem no seu orçamento.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contato" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Entre em contato</h2>
+        <div class="contact grid grid--2">
+          <div class="contact__methods reveal">
+            <a class="contact__item" href="https://wa.me/5548988715207?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp: (48) 98871-5207
+            </a>
+            <a class="contact__item" href="mailto:serv.topclean1@gmail.com">
+              <i class="fa-solid fa-envelope"></i> serv.topclean1@gmail.com
+            </a>
+            <a class="contact__item" href="https://www.instagram.com/topclean.serv/" target="_blank" rel="noopener">
+              <i class="fa-brands fa-instagram"></i> @topclean.serv
+            </a>
+            <a class="contact__item" href="tel:+5548988715207">
+              <i class="fa-solid fa-phone"></i> Ligar agora
+            </a>
+          </div>
+
+          <!-- Form sem backend: envia via WhatsApp ou mailto -->
+          <form class="contact__form reveal" id="contactForm" autocomplete="on" novalidate>
+            <div class="form__group">
+              <label for="nome">Nome</label>
+              <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
+            </div>
+            <div class="form__group">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" placeholder="seu@email.com" required />
+            </div>
+            <div class="form__group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="4" placeholder="Como podemos ajudar?" required></textarea>
+            </div>
+            <div class="form__actions">
+              <button class="btn btn--primary" type="submit" id="sendWhats">Enviar pelo WhatsApp</button>
+              <button class="btn btn--outline" type="button" id="sendEmail">Enviar por E-mail</button>
+            </div>
+            <p class="form__disclaimer">Você será redirecionado ao WhatsApp/E-mail com a mensagem pronta.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__row">
+      <p>© <span id="year"></span> Top Clean — Todos os direitos reservados.</p>
+      <a class="link-cta" href="#home" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i> Topo</a>
+    </div>
+  </footer>
+
+  <!-- Scripts (sem jQuery) -->
+  <script>
+    // Ano atual
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Medir altura do header para limitar o dropdown (mobile)
+    const headerEl = document.querySelector('.header');
+    function setHeaderH(){
+      const h = headerEl.getBoundingClientRect().height;
+      document.documentElement.style.setProperty('--header-h', Math.round(h) + 'px');
+    }
+    setHeaderH();
+    window.addEventListener('resize', setHeaderH);
+
+    // Toggle menu mobile acessível
+    const navToggle = document.getElementById('navToggle');
+    const siteNav   = document.getElementById('siteNav');
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!expanded));
+      siteNav.classList.toggle('is-open');
+      document.body.classList.toggle('no-scroll', !expanded);
+    });
+
+    // Reveal on scroll (respeita prefers-reduced-motion)
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!prefersReduced && 'IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('in');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    } else {
+      document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+    }
+
+    // ===== Form sem backend =====
+    const form = document.getElementById('contactForm');
+    const sendEmailBtn = document.getElementById('sendEmail');
+
+    function getFormValues(){
+      const nome = document.getElementById('nome').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const mensagem = document.getElementById('mensagem').value.trim();
+      return { nome, email, mensagem };
+    }
+
+    form.addEventListener('submit', (e) => {
+      // dispara validação nativa
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        form.reportValidity();
+        return;
+      }
+      e.preventDefault();
+      const { nome, email, mensagem } = getFormValues();
+      const texto = `Novo contato pelo site Top Clean:\n\nNome: ${nome}\nE-mail: ${email}\nMensagem: ${mensagem}`;
+      const waURL = 'https://wa.me/5548988715207?text=' + encodeURIComponent(texto);
+      window.open(waURL, '_blank');
+    });
+
+    sendEmailBtn.addEventListener('click', () => {
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      const { nome, email, mensagem } = getFormValues();
+      const subject = 'Contato pelo site - Top Clean';
+      const body = `Nome: ${nome}\nE-mail: ${email}\nMensagem: ${mensagem}`;
+      window.location.href = `mailto:serv.topclean1@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+  </script>
 </body>
-
 </html>
