@@ -1,0 +1,606 @@
+This file is a merged representation of a subset of the codebase, containing specifically included files, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of a subset of the repository's contents that is considered the most important context.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Only files matching these patterns are included: index.html, styles/media-query.css, styles/style.css
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+index.html
+styles/media-query.css
+styles/style.css
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="styles/media-query.css">
+@charset "UTF-8";
+
+/* Typical device breakpoints
+    * -------------------------
+    * Telas pequenas: até 600px
+    * Phone: de 600px até 768px
+    * Tablet: 768px até 992px
+    * laptop/desktops: 992px até 1200px
+    * Large laptops/desktop: 1200px ou mais
+    */
+</file>
+
+<file path="styles/style.css">
+@charset "UTF-8";
+@import url('../fontes/Mulish/static/*.ttf');
+@import url('../fontes/Raleway/static/*.ttf');
+@import url('../fontes/OpenSans/static/*.ttf');
+
+:root {
+    --primary-color: #3d9daa;
+    --secondary-color: #127599;
+    --tertiary-color: #e23f72;
+    --quaternary-color: #398e99;
+
+    --primary-font:
+        'Raleway', sans-serif;
+    --secondary-font:
+        'Mulish', sans-serif;
+    --tertiary-font:
+        'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: var(--primary-font);
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: var(--secondary-color);
+    width: 100vw;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-family: var(--secondary-font);
+}
+
+header>p {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 200;
+    padding: 10px;
+    width: fit-content
+}
+
+
+header>p>a {
+    padding: 6px;
+}
+
+header p a:hover {
+    background-color: var(--tertiary-color);
+    border-radius: 4px;
+    transition: 0.4s;
+  }
+header>p>span {
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+header a {
+    width: 100vw;
+    height: 100%;
+    color: white;
+    font-weight: 300;
+    font-family: var(--tertiary-font);
+}
+
+header>img {
+    width: 200px;
+}
+
+header input,
+nav {
+    display: none;
+}
+
+#burguer-label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 5px 4px rgba(3, 3, 3, 0.171);
+}
+
+header>nav {
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+header>nav>ul {
+    list-style-type: none;
+    background-color: var(--secondary-color);
+}
+
+header>nav>ul>li {
+    margin: 5px 5px;
+    padding: 5px 0px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+header>nav>ul>li:hover {
+    background-color: var(--tertiary-color);
+    transition: 0.3s;
+}
+
+header>nav>ul>li>a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-family: var(--tertiary-font);
+    width: 100%;
+    height: 100%;
+}
+
+header>nav>ul>li>a:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+main {
+    background-color: white;
+    color: black;
+    font-family: var(--secondary-font);
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 800px;
+}
+
+main h1,
+h2 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    width: 100%;
+}
+
+main h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+main p {
+    font-family: 'Mulish', sans-serif;
+    text-indent: 30px;
+    text-align: justify;
+    font-size: 1em;
+    padding: 15px 25px;
+}
+
+main>section {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+main>section#home>div#missao-da-empresa {
+    position: relative;
+    background: white url(../imagens/topclean_background.jpg) no-repeat center center;
+    background-size: cover;
+    height: 280px;
+    width: 100%;
+}
+
+main>section#home>div#missao-da-empresa>p {
+    text-indent: 0;
+    width: 180px;
+    font-size: 1em;
+    text-align: left;
+    color: white;
+    position: absolute;
+    top: 65%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: #127599b7;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+main>section#home>div#missao-da-empresa>p>span {
+    font-size: 1em;
+    font-style: italic;
+}
+
+main>section>div.home {}
+
+main>section>div.home#limpeza-vidros {
+    background: white url(../imagens/img-limpeza-de-vidros.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+main>section>div.home#limpeza-fachadas {
+    background: white url(../imagens/img-limpeza-de-fachadas.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+main>section>div.home>p {
+    background-color: #ffffff;
+
+}
+
+main>section>div.home>h2 {
+    background-image: linear-gradient(to left, white, #e23f7394);
+    margin-bottom: 0px;
+}
+
+#servicos h2 {
+    background-image: linear-gradient(to left, white, var(--secondary-color));
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.servicos h3 {
+    background-image: linear-gradient(to left, white, #e23f7362);
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 25px;
+}
+
+main>section#servicos>div.servicos>img {
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
+}
+
+main>#promocoes> h2 {
+    background-image: linear-gradient(to left, white, var(--secondary-color));
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+main>#promocoes>#parceria {
+    background: linear-gradient(to bottom right, #fdf497 0%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    color: white;
+    font-family: var(--secondary-font);
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 800px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+main>#promocoes>#parceria>h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main>#promocoes>#parceria>p>a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--tertiary-font);
+    width: 100%;
+    height: 100%;
+}
+
+main>#promocoes>.promocao {
+    background-color: var(--tertiary-color);
+    color: black;
+    font-family: var(--secondary-font);
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 800px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+main>#promocoes>.promocao> ul {
+    margin-left: 20px;
+}
+
+main>#promocoes>.promocao> ul>li {
+    list-style-type: disc;
+    margin-bottom: 10px;
+}
+
+main>#promocoes>#base {
+    background: linear-gradient(to bottom right, #3d9daa 0%, #6ab7c4 45%,#8fc5ce 60%,#b2d3d8 90%);
+}
+
+main>#promocoes>#fidelidade {
+    background: linear-gradient(to bottom right, #e23f72 0%, #e6678c 45%,#ea8fa6 60%,#eeb7c0 90%);
+}
+
+main>#promocoes>#premium {
+    background: linear-gradient(to bottom right, #DAA520 0%, #DDB53A 45%,#DEBB54 60%,#E0C16E 90%);
+}
+
+main>#promocoes>p{
+    text-indent: 0;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+main>#sobre{
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: var(--secondary-font);
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 800px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: var(--secondary-font);
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 800px;
+    padding: 10px;
+    text-align: center;
+}
+
+footer> p{
+    
+}
+
+
+form {
+    display: none;
+}
+</file>
+
+<file path="index.html">
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Top Clean oferece serviços profissionais de limpeza de vidros, fachadas, vitrines e outros. Nós temos a experiência e os equipamentos necessários para deixá-los brilhando.">
+    <meta name="keywords" content="limpeza, vidros, fachadas, vitrines, serviços, profissionais">
+    <meta name="author" content="Top Clean">
+    <meta name="robots" content="index,follow">
+    <meta property="og:title" content="Top Clean - Serviços de Limpeza Profissional">
+    <meta property="og:description" content="Top Clean oferece serviços profissionais de limpeza de vidros, fachadas, vitrines e outros. Nós temos a experiência e os equipamentos necessários para deixá-los brilhando.">
+    <meta property="og:image" content="imagens/topclean_background.jpg">
+    <meta property="og:url" content="https://makenrosa.github.io/topclean">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="stylesheet" href="styles/media-query.css">
+    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.css">
+    <title>Top Clean - Serviços de Limpeza Profissional</title>
+</head>
+
+<body>
+    <header>
+        <img src="imagens/leko-limpa-crop.png" alt="Logo Top Clean" width="320px">
+        <p>Orçamento rápido <span>></span><a
+                href="https://api.whatsapp.com/send/?phone=%2B5548988715207&text&type=phone_number&app_absent=0" target="_blank">(48)
+                98871-5207</a></p>
+        <input type="checkbox" name="burguer" id="burguer" onclick="mostrarMenu()">
+        <label for="burguer" id="burguer-label">Menu</label>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#promocoes">Promoções</a>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Top Clean</h1>
+
+            <div id="missao-da-empresa">
+                <p>Missão da empresa: <span id="missao-empresa">“Buscar a satisfação dos nossos clientes e inspirar o
+                        mundo
+                        a criar um valor social de um ambiente limpo e saudável.”</span></p>
+            </div>
+            <div class="home" id="limpeza-vidros">
+                <h2>Limpeza de vidros</h2>
+                <p>Não importa se seus vidros são grandes ou pequenos, internos ou externos, nós temos a experiência e
+                    os equipamentos necessários para deixá-los brilhando. Nossos serviços incluem limpeza de lojas,
+                    casas, vitrines, espelhos, entre outros. Oferecemos também serviços em altura.</p>
+            </div>
+            <div class="home" id="limpeza-fachadas">
+                <h2>Limpeza de fachadas</h2>
+                <p>Não importa o tamanho ou a complexidade do seu projeto de limpeza, nossa equipe altamente qualificada
+                    e equipada está pronta para fornecer serviços profissionais e eficientes em limpeza de fachadas.</p>
+
+            </div>
+        </section>
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <div class="servicos">
+                <h3>Limpeza Residencial</h3>
+                <p>Oferecemos serviços de limpeza residencial altamente qualificados para sua residência. Temos
+                    compromisso e confiança na qualidade de nossos serviços.</p>
+                <img src="imagens/limpeza-residencial.jpg" alt="Limpeza residencial">
+            </div>
+            <div class="servicos">
+                <h3>Limpeza Comercial</h3>
+                <p>Temos anos de experiência em limpezas comerciais, oferecendo serviços de limpeza de vidros e fachadas
+                    de alta qualidade e com comprometimento com o cliente.</p>
+                <img src="imagens/limpeza-comercial.jpg" alt="Limpeza comercial">
+            </div>
+            <div class="servicos">
+                <h3>Limpeza Predial</h3>
+                <p>Nós temos a segurança como prioridade em nossos serviços de limpeza predial, seja nas alturas com
+                    rapel ou no chão, temos equipamentos de segurança de última geração.</p>
+                <img src="imagens/limpeza-predial.jpg" alt="Limpeza predial">
+            </div>
+        </section>
+        <section id="promocoes">
+            <h2>Visibilidade não é custo, <br>é investimento!</h2>
+            <div id="parceria">
+                <h3>Parceria social com desconto</h3>
+                <p>Passo 1 - Siga o <a href="https://www.instagram.com/topclean.serv/"
+                        target="_blank">@topclean.serv</a> no instagram.</p>
+                <p>Passo 2 - Comente e Compartilhe a foto da promoção no seu instagram.</p>
+                <p><abbr title="Faça uma pesquisa no Google pelo nome da empresa.
+                    Encontre o perfil da empresa na seção de resultados de pesquisa.
+                    Clique no botão 'Avaliações' no perfil da empresa.
+                    Clique no botão 'Escrever uma avaliação' e forneça uma classificação de estrelas e escreva 
+                    seu comentário sobre sua experiência com a empresa.
+                    Clique em 'Publicar' para enviar sua avaliação.">Passo 3</abbr> - Dê o seu feedback na pesquisa do
+                    google.</p>
+            </div>
+            <div class="promocao" id="base">
+                <h3>Plano Base</h3>
+                <p>Limpeza única</p>
+                <ul>
+                    <li>Transformação incrível do seu espaço com os serviços de limpeza especializada da Top Clean;</li>
+                    <li>Limpeza parcial, com orçamento local, sem compromisso, preço único;</li>
+                    <li>Agendamento através de nossas linhas de contato;</li>
+                    <li>Atendimento personalizado.</li>
+                </ul>
+            </div>
+            <div class="promocao" id="fidelidade">
+                <h3>Plano Fidelidade</h3>
+                <p>Limpeza mensal</p>
+                <ul>
+                    <li>Você não precisa se preocupar em ficar na mão, com o plano mensal a sua data é garantida!</li>
+                    <li>Largue a limpeza parcial, seus investimentos com a limpeza mensal serão menores e lhe trarão um
+                        melhor retorno.</li>
+                    <li>Manter o seu local limpo pode aumentar sua visibilidade e atrair mais clientes em potencial. Com
+                        o nosso plano de limpeza mensal, você pode economizar dinheiro e garantir uma limpeza
+                        especializada completa.</li>
+                </ul>
+            </div>
+            <div class="promocao" id="premium">
+                <h3>Plano Premium</h3>
+                <p>Limpeza quinzenal</p>
+                <ul>
+                    <li>2 limpezas ao mês, sendo a segunda pela metade do preço;</li>
+                    <li>Sem preocupação com agendamento;</li>
+                    <li>Cultivamos o seu ambiente e o ambiente que o seu cliente deseja;</li>
+                    <li>Seu espaço o mês inteiro limpo, impulsionando a visibilidade física da sua loja;</li>
+                    <li>Resgate as pessoas que "passavam" direto pela sua loja.</li>
+                </ul>
+            </div>
+            <p>Quanto melhor o seu investimento, maior a sua visibilidade.</p>
+        </section>
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>A Top Clean é uma empresa especializada em serviços profissionais de limpeza de vidros, fachadas,
+                vitrines e outros. Temos anos de experiência e equipamentos de última geração para garantir resultados
+                impecáveis. Além disso, oferecemos manutenção regular para manter suas fachadas limpas e livres da
+                velhice. Nossa equipe é amplamente treinada e qualificada, sempre buscando a satisfação dos nossos
+                clientes e inspirando o mundo a criar um valor social de um ambiente limpo e saudável.</p>
+        </section>
+        <section id="contato">
+            <h2>Entre em contato</h2>
+            <form action="enviar-mensagem.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem"></textarea>
+                <input type="submit" value="Enviar Mensagem">
+            </form>
+            <p><a href="https://api.whatsapp.com/send/?phone=%2B5548988715207&text&type=phone_number&app_absent=0"
+                    target="_blank">(48) 98871-5207<i class="fab fa-whatsapp"></i></a></p>
+            <p><a href="https://www.instagram.com/topclean.serv/">@topclean.serv<i class="fab fa-instagram"></i></a></p>
+            <p><a href="mailto:serv.topclean1@gmail.com">serv.topclean1@gmail.com<i class="fas fa-envelope"></i></a></p>
+        </section>
+        <footer>
+            <p>Copyright ©2022 Top Clean</p>
+        </footer>
+    </main>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function mostrarMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+</file>
+
+</files>

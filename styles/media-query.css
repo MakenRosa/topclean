@@ -1,10 +1,51 @@
+/* styles/media-query.css */
 @charset "UTF-8";
 
-/* Typical device breakpoints
-    * -------------------------
-    * Telas pequenas: até 600px
-    * Phone: de 600px até 768px
-    * Tablet: 768px até 992px
-    * laptop/desktops: 992px até 1200px
-    * Large laptops/desktop: 1200px ou mais
-    */ 
+/* Breakpoints
+ * sm: 640px
+ * md: 768px
+ * lg: 1024px
+ * xl: 1280px
+*/
+
+/* >= 640px */
+@media (min-width: 640px){
+  .hero__content{ text-align: left; }
+  .hero__title{ max-width: 22ch; }
+  .hero__subtitle{ max-width: 46ch; }
+}
+
+/* >= 768px */
+@media (min-width: 768px){
+  .header__row{
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .nav{
+    position: static; transform: none; background: transparent; backdrop-filter: none;
+  }
+  .nav__list{
+    grid-auto-flow: column; justify-content: end; gap: .8rem; padding: 0;
+  }
+  .nav__list a{
+    padding: .5rem .8rem; border-radius: 999px; color: #eaf6f9;
+  }
+  .nav__list a:hover{ background: rgba(255,255,255,.12); }
+  .nav-toggle{ display: none; }
+  .header__cta{ display: inline-flex; }
+
+  .grid--2{ grid-template-columns: 1fr 1fr; }
+  .grid--3{ grid-template-columns: repeat(2, 1fr); }
+  .card__img{ height: 220px; }
+}
+
+/* >= 1024px */
+@media (min-width: 1024px){
+  .grid--3{ grid-template-columns: repeat(3, 1fr); }
+  .card__img{ height: 200px; }
+}
+
+/* >= 1280px */
+@media (min-width: 1280px){
+  .hero{ min-height: 72vh; }
+}
